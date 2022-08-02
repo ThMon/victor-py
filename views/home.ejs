@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link></link> 
+    <title>Document</title>
+</head>
+<body>
+    <h1>Victor's app</h1>
+    <form>
+        <div>
+            <label>Choisir station</label>
+            <select>
+                <%for(let i =0; i < stations.length; i++) {%>
+                    <option value="<%=stations[i].id%>"><%=stations[i].name%></option>
+                <%}%>
+            </select>
+        </div>
+    </form>
+
+</body>
+<script src="/js/index.js"></script>
+</html>
